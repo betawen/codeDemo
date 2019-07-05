@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>展示浮动</title>
+</head>
+<style>
+    .topDiv {
+        width: 500px;
+        border: 2px solid black;
+
+        overflow: auto;     // attention
+    }
+    .floatDiv {
+        width: 100px;
+        height: 100px;
+        border: 2px dotted red;
+        color: red;
+        margin: 4px;
+        float: left;
+    }
+    .bottomDiv {
+        width: 500px;
+        height: 200px;
+        margin: 5px 0;
+        border: 2px dotted black;
+    }
+    .textDiv {
+        color: blue;
+        border: 2px solid blue;
+        /*clear: left;    //第一种，利用clear，对于元素本身清除浮动已经够了*/
+    }
+    /*.blankDiv {*/
+    /*    clear: both; // or left    //第二种，加入一个空白div*/
+    /*}*/
+    .clearfix:after {   // after 伪类去浮动
+    content: '.';
+        height: 0;
+        display: block;
+        clear: both;
+    }
+</style>
+<body>
+<div class="topDiv">
+    <div class="floatDiv">float left</div>
+    <div class="textDiv">在讲清除浮动的方法之前，我们先来了解一下为什么要清除浮动，清除浮动的目的是什么，即，要解决什么样的问题。来看一个浮动的例子(略去了文字内容)</div>
+<!--    <div class="blankDiv"></div>-->
+</div>
+<div class="bottomDiv">利用clear；<br>父元素结束之前插入清除浮动的块级元素；<br>利用伪元素clearfix；<br>利用overflow清除浮动；</div>
+</body>
+</html>
