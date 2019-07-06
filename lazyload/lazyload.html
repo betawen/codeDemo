@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片懒加载</title>
+</head>
+<body>
+<div @scroll="lazyLoad" ref="lazy">
+    <img v-for="(src, index) in imgs" src="##" :dataSrc="src" :key="index">
+    <!--more img-->
+</div>
+</body>
+</html>
