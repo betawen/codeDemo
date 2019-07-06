@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解决margin重叠问题</title>
+    <style type="text/css">
+        p {
+            width: 200px;
+            height: 100px;
+            background-color: #fcc;
+            margin: 25px;
+
+            /*display: inline-block;*/
+            /*float: left;*/
+        }
+        .wrap {
+            /*p外面包裹一层，并按如下设置，
+            形成一个单独的BFC*/
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p class="a">test a</p>
+</div>
+<p class="b">test b</p>
+</body>
+</html>

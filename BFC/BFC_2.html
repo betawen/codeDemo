@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BFC解决父元素高度塌陷问题</title>
+    <style type="text/css">
+        .container {
+            width: 300px;
+            border: 1px solid #999;
+            background-color: #DBD9B7;
+            /*使父元素变为BFC，解决高度塌陷*/
+            overflow: auto;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: #E67B85;
+            /*会造成高度塌陷*/
+            float: left;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<div class="container">container
+    <div class="son">son</div>
+</div>
+</body>
+</html>

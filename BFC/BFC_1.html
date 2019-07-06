@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BFC实现两栏自适应</title>
+    <style type="text/css">
+        .container {
+            width: 500px;
+            border: aqua 1px solid;
+        }
+        .left {
+            width: 100px;
+            height: 150px;
+            background-color: #B3D1C1;
+            float: left;
+        }
+        .right {
+            height: 200px;
+            background-color: #A694C1;
+            /*把.right这个自适应预算变成BFC，
+            避免与.left这个有float属性的元素重叠；*/
+            overflow: auto;     // 非visible
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+</body>
+</html>
