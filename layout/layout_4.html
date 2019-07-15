@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>圣杯布局</title>
+    <title>没有名字的布局</title>
     <style type="text/css">
         .container{
+            position: relative;
             display: flex;
         }
-        .left, .middle, .right{
-            text-align: center;
-            position: relative;
-        }
-        .left, .right{
-            min-width: 200px;
-            width: 30%;
+        .left,.right, .middle{
+            border: #23b7e5 1px solid;
+            position: absolute;
+            float: left;
             height: 200px;
-            background-color: #42b983;
         }
         .left{
-            margin-left: 0px;
+            width: 200px;
+            left: 0px;
         }
         .right{
-            margin-right: 0px;
+            width: 200px;
+            right: 0px;
         }
         .middle{
-            background-color: #E67B85;
-            width: 100%;
+            min-width: 100px;
+            left: 200px;
+            right: 200px;
         }
     </style>
 </head>
