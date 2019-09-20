@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event proxy</title>
+</head>
+<body>
+<div id="div">
+    <button class="button1">
+        button1 content
+    </button>
+    <button class="buttion2">
+        button2 content
+    </button>
+    <button class="button3">
+        button3 content
+    </button>
+    <button class="button4">
+        button4 content
+    </button>
+</div>
+<script type="text/javascript">
+    document.getElementById('div').addEventListener("click", (e) => {
+        alert(e.target.className)
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event model</title>
+</head>
+<body>
+<div id="myDiv">
+    <button id="myButton">
+        click here
+    </button>
+</div>
+<script type="text/javascript">
+    document.getElementsByTagName("html")[0].addEventListener("click", () => {
+        console.log('html')
+    }, false)
+    document.getElementsByTagName("body")[0].addEventListener("click", () => {
+        console.log('body')
+    }, false)
+    document.getElementsByTagName("div")[0].addEventListener("click", () => {
+        console.log('div')
+    }, false)
+    document.getElementsByTagName("button")[0].addEventListener("click", () => {
+        console.log('button')
+    }, false)
+    document.addEventListener("click", () => {
+        console.log('document')
+    }, false)
+    window.addEventListener("click", () => {
+        console.log('window')
+    }, false)
+</script>
+</body>
+</html>
