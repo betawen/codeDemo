@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+</head>
+<style type="text/css">
+    div{
+        height: 100px;
+        border: #E67B85 1px solid;
+        background-color: #41B883;
+    }
+    @media (max-width: 400px){
+        .container{
+            flex-wrap: wrap;
+            height: auto;
+            width: 100%;
+        }
+        .content,.aside1, .aside2{
+            flex: 1 0 300px!important;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .content{
+        flex: 1;
+    }
+    .aside1, .aside2{
+        flex: 0 0 100px;
+    }
+    .aside1{
+        order: -1;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="content">content</div>
+    <div class="aside1">aside1</div>
+    <div class="aside2">aside2</div>
+</div>
+</body>
+</html>

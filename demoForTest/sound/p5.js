@@ -74014,8 +74014,8 @@
           // http://mrl.nyu.edu/~perlin/noise/
           // Adapting from PApplet.java
           // which was adapted from toxi
-          // which was adapted from the german demo group farbrausch
-          // as used in their demo "art": http://www.farb-rausch.de/fr010src.zip
+          // which was adapted from the german VueDemo group farbrausch
+          // as used in their VueDemo "art": http://www.farb-rausch.de/fr010src.zip
 
           // someday we might consider using "improved noise"
           // http://mrl.nyu.edu/~perlin/paper445.pdf
