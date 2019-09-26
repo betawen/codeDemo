@@ -69741,7 +69741,7 @@
 
               request = new Request(path, {
                 method: method,
-                mode: 'cors',
+                mode: 'security',
                 body: data,
                 headers: new Headers({
                   'Content-Type': contentType
