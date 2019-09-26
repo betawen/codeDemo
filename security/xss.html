@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+<div id="button">
+    <a href="http://localhost:8888?heelo=world<script>alert('hello')</script>">click here</a>
+</div>
+<div class="input">
+    <label>input here</label><input type="text">
+</div>
+</body>
+</html>
