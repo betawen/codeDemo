@@ -8,27 +8,31 @@
 <div id="myDiv">
     <button id="myButton">
         click here
+        <a href="#" id="link">link here</a>
     </button>
 </div>
 <script type="text/javascript">
     document.getElementsByTagName("html")[0].addEventListener("click", () => {
         console.log('html')
-    }, false)
+    }, true)
     document.getElementsByTagName("body")[0].addEventListener("click", () => {
         console.log('body')
-    }, false)
+    }, true)
     document.getElementsByTagName("div")[0].addEventListener("click", () => {
         console.log('div')
-    }, false)
+    }, true)
     document.getElementsByTagName("button")[0].addEventListener("click", () => {
         console.log('button')
-    }, false)
+    }, true)
+    document.getElementById("link").addEventListener("click", () => {
+        console.log('a')
+    }, true)
     document.addEventListener("click", () => {
         console.log('document')
-    }, false)
+    }, true)
     window.addEventListener("click", () => {
         console.log('window')
-    }, false)
+    }, true)
 </script>
 </body>
 </html>
